@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TolkienBooks</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -34,12 +35,12 @@
                     <a href="#" class="lista-menu__link">Design & UX</a>
                 </li>
             </ul>
-            <img src="assets/logo.svg" alt="Logo TolkienBooks" class="cabecalho__logo container__imagem">
+            <img src="assets/images/logo.svg" alt="Logo TolkienBooks" class="cabecalho__logo container__imagem">
         </div>
         <div class="container">
-            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-            <a href="#"><img src="assets/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#"><img src="assets/images/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="assets/images/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
 
@@ -48,5 +49,58 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será a sua proxima leitura?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="assets/books/ApacheKafka.svg" alt="Livro sobre ApacheKafka"></div>
+              <div class="swiper-slide"><img src="assets/books/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
+              <div class="swiper-slide"><img src="assets/books/Nodejs.svg" alt="Livro sobe NodeJS"></div>
+              <div class="swiper-slide"><img src="assets/books/Portugol.svg" alt="Livro sobe Portugol"></div>
+              <div class="swiper-slide"><img src="assets/books/ReactNative.svg" alt="Livro sobe React native"></div>
+              <div class="swiper-slide"><img src="assets/books/Tuning.svg" alt="Livro sobe Tuning"></div>
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º Linha -->
+            <div class="card__descricao">
+                <!--1º Coluna-->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você se Interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2º Coluna -->
+                <img src="assets/images/Angular.svg" alt="Livro sobre Angular" class="descricao__imagem">
+            </div>
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="/assets/images/Favoritos.svg" alt="Favoritar Livro"></li>
+                    <li class="botoes__item"><img src="/assets/images/Compras.svg" alt="Comprar Livro"></li>
+                </ul>
+                <a href="#" class="botao__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
 </body>
 </html>
