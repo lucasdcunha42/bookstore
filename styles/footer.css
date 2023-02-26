@@ -9,3 +9,37 @@
     text-align: center;
     padding: 2em;
 }
+
+@media screen and (min-width: 1024px){
+    
+    .rodape {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .rodape__titulo {
+        width: 15%;
+        padding: 2em;
+    }
+
+    .lista-rodapé {
+        margin: 1em;
+    }
+
+    .lista-rodapé__titulo {
+        color: var(--branco);
+        font-weight: 500;
+        padding-top: 1em;
+    }
+
+    .lista-rodapé__item {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+    }
+    
+    .lista-rodapé__link {
+        text-decoration: none;
+        color: var(--branco);
+        margin-left: 0.5em;
+    }
+}

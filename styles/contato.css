@@ -36,3 +36,26 @@
     background: url(/assets/images/email.svg) no-repeat;
     background-position: 1em;
 }
+
+@media screen and (min-width: 1024px) {
+    
+    .contato {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contato__descricao {
+        width: 35%;
+    }
+    .contato__titulo {
+        font-size: 24px;
+    }
+    .contato__texto {
+        margin: 1em 0 0 0;
+    }
+    
+    .contato__cadastro-email {
+        width: 35%;
+    }
+}

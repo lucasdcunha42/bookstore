@@ -18,7 +18,7 @@
     justify-content: center;
 }
 
-.topicos__lista-item a{
+.topico__lista-link {
     text-decoration: none;
     color: var(--branco);
     font-size: 14px;
@@ -29,4 +29,15 @@
     background-color: var(--laranja);
     padding: 1em;
     margin: 0.2em;
+}
+
+@media screen and (min-width: 1024px)  {
+
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topico__lista-link {
+        font-size: 24px;
+    }
 }
