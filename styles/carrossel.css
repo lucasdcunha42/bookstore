@@ -81,7 +81,7 @@
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
-    padding: 1em 2.25em;
+    padding: 1em 2.2em;
 }
 
 .perfil {
@@ -157,6 +157,11 @@
     .card {
         width:  60%;
         margin-left: 3em;
+    }
+
+    .botao__ancora {
+        max-width: 99px;
+        padding: 1em 2em;
     }
 
 }
