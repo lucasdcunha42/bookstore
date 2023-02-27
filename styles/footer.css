@@ -10,6 +10,10 @@
     padding: 2em;
 }
 
+.lista-rodapé {
+    display: none;
+}
+
 @media screen and (min-width: 1024px){
     
     .rodape {
@@ -23,10 +27,12 @@
 
     .lista-rodapé {
         margin: 1em;
+        display: block;
     }
 
     .lista-rodapé__titulo {
         color: var(--branco);
+        font-size: 18px;
         font-weight: 500;
         padding-top: 1em;
     }
@@ -41,5 +47,21 @@
         text-decoration: none;
         color: var(--branco);
         margin-left: 0.5em;
+    }
+
+    .lista-rodapé__link:hover {
+        color: var(--laranja);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .rodape {
+        padding: 3em 0;
+    }
+  
+    .lista-rodapé {
+        border-left: 2px solid var(--branco);
+        padding-left: 1em;
     }
 }
