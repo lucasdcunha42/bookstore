@@ -1,9 +1,9 @@
-@import url(/styles/header.css);
-@import url(/styles/banner.css);
-@import url(/styles/carrossel.css);
-@import url(/styles/topicos.css);
-@import url(/styles/contato.css);
-@import url(/styles/footer.css);
+@import url(/styles/main-page/header.css);
+@import url(/styles/main-page/banner.css);
+@import url(/styles/main-page/carrossel.css);
+@import url(/styles/main-page/topicos.css);
+@import url(/styles/main-page/contato.css);
+@import url(/styles/main-page/footer.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
